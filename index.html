@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Quest | Classroom RPG</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="home">
+
+<div class="login-card">
+  <div class="logo">VQ</div>
+
+  <h1>Voice Quest</h1>
+  <p class="subtitle">
+    A classroom RPG that helps quiet students join English lessons through fun micro-speaking missions.
+  </p>
+
+  <input id="studentName" placeholder="Enter your hero name" />
+
+  <select id="grade">
+    <option value="6">Grade 6</option>
+    <option value="7">Grade 7</option>
+  </select>
+
+  <select id="level">
+    <option value="support">I need attention triggers</option>
+    <option value="average">I can speak with help</option>
+    <option value="confident">I can speak confidently</option>
+  </select>
+
+  <button onclick="startGame()">Start Quest</button>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
