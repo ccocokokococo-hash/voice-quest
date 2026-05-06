@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Quest | Missions</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="game-layout">
+  <aside class="sidebar">
+    <h2>Voice Quest</h2>
+    <a href="map.html">🌍 Map</a>
+    <a class="active" href="missions.html">🎯 Missions</a>
+    <a href="team.html">👥 Team</a>
+    <a href="inventory.html">🎒 Inventory</a>
+    <a href="voice-zone.html">🎙 Voice Zone</a>
+    <a href="npc-chat.html">💬 NPC Chat</a>
+    <a href="boss-level.html">👹 Boss Level</a>
+    <a href="energy.html">⚡ Energy</a>
+  </aside>
+
+  <main>
+    <div class="top-card">
+      <h1>🎯 Speaking Missions</h1>
+      <p>Small missions help students stay active instead of switching off during the lesson.</p>
+    </div>
+
+    <div class="filters">
+      <button onclick="filterMissions('all')">All</button>
+      <button onclick="filterMissions('Easy')">Easy</button>
+      <button onclick="filterMissions('Medium')">Medium</button>
+      <button onclick="filterMissions('Hard')">Hard</button>
+      <button onclick="filterMissions('Fun')">Fun</button>
+      <button onclick="filterMissions('Team')">Team</button>
+    </div>
+
+    <div id="missionsContainer"></div>
+  </main>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/missions.js"></script>
+</body>
+</html>
