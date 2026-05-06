@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1b4b, #0f172a);
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  min-height: 100vh;
+}
+
+.home {
+  display: grid;
+  place-items: center;
+}
+
+.login-card {
+  width: 430px;
+  padding: 36px;
+  border-radius: 32px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: #111827;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  margin: 12px 0 22px;
+  color: #dbeafe;
+  line-height: 1.5;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 16px;
+  border: none;
+  margin: 9px 0;
+  font-size: 16px;
+}
+
+button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 8px 5px 8px 0;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.secondary {
+  background: linear-gradient(135deg, #475569, #334155);
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #312e81, #1e1b4b);
+  padding: 25px;
+  border-right: 3px solid rgba(255,255,255,0.08);
+}
+
+.sidebar h2 {
+  font-size: 30px;
+  margin-bottom: 24px;
+  color: #facc15;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 14px;
+  border-radius: 18px;
+  margin: 9px 0;
+  background: rgba(255,255,255,0.08);
+  transition: 0.25s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #4f46e5;
+  transform: translateX(5px);
+}
+
+main {
+  padding: 35px;
+}
+
+.top-card,
+.card,
+.mission-card,
+.player-card,
+.item,
+.voice-card,
+.chat-box,
+.boss-card,
+.energy-big-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  border: 2px solid rgba(255,255,255,0.08);
+  border-radius: 28px;
+  padding: 26px;
+  margin: 18px 0;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+.top-card h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.top-card p,
+.mission-card p {
+  color: #dbeafe;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.map-grid,
+.team-grid,
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.zone {
+  min-height: 180px;
+  border-radius: 32px;
+  padding: 35px;
+  font-size: 27px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.zone span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #e0f2fe;
+}
+
+.zone:hover {
+  transform: scale(1.04);
+}
+
+.active {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.locked {
+  background: linear-gradient(135deg, #475569, #1f2937);
+  opacity: 0.8;
+}
+
+.boss {
+  background: linear-gradient(135deg, #ef4444, #991b1b);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    box-shadow: 0 0 45px rgba(239, 68, 68, 0.8);
+  }
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.mission-card {
+  transition: 0.25s;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-top,
+.mission-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.mission-top span {
+  padding: 8px 13px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.easy {
+  background: #22c55e;
+}
+
+.medium {
+  background: #f59e0b;
+}
+
+.hard {
+  background: #ef4444;
+}
+
+.example-box {
+  background: rgba(15, 23, 42, 0.55);
+  border-left: 5px solid #facc15;
+  padding: 15px;
+  border-radius: 18px;
+  margin: 16px 0;
+}
+
+.item {
+  font-size: 24px;
+  text-align: center;
+}
+
+.item span {
+  display: block;
+  font-size: 15px;
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+.passive {
+  border-color: #facc15;
+  box-shadow: 0 0 35px rgba(250, 204, 21, 0.25);
+}
+
+audio {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.npc-message {
+  background: #312e81;
+  padding: 18px;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#npcReply,
+#voiceResult,
+#teamResult,
+#bossResult,
+#energyMessage {
+  margin-top: 15px;
+  color: #facc15;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.boss-body {
+  display: grid;
+  place-items: center;
+}
+
+.boss-screen {
+  max-width: 850px;
+  text-align: center;
+  padding: 40px;
+}
+
+#bossTimer {
+  font-size: 110px;
+  font-weight: 900;
+  color: #facc15;
+  margin: 20px 0;
+}
+
+.energy-circle {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: conic-gradient(#facc15, #e879f9, #38bdf8, #facc15);
+  display: grid;
+  place-items: center;
+  margin: 20px auto;
+  animation: spin 8s linear infinite;
+}
+
+.energy-circle span {
+  width: 205px;
+  height: 205px;
+  background: #0f172a;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 46px;
+  font-weight: 900;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.xp-popup {
+  position: fixed;
+  top: 36px;
+  right: 36px;
+  background: #22c55e;
+  color: white;
+  padding: 18px 26px;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: 800;
+  animation: pop 1.8s forwards;
+  z-index: 100;
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-45px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .map-grid,
+  .team-grid,
+  .inventory-grid {
+    grid-template-columns: 1fr;
+  }
+}
