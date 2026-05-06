@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Quest | Energy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="game-layout">
+  <aside class="sidebar">
+    <h2>Voice Quest</h2>
+    <a href="map.html">🌍 Map</a>
+    <a href="missions.html">🎯 Missions</a>
+    <a href="team.html">👥 Team</a>
+    <a href="inventory.html">🎒 Inventory</a>
+    <a href="voice-zone.html">🎙 Voice Zone</a>
+    <a href="npc-chat.html">💬 NPC Chat</a>
+    <a href="boss-level.html">👹 Boss Level</a>
+    <a class="active" href="energy.html">⚡ Energy</a>
+  </aside>
+
+  <main>
+    <div class="top-card">
+      <h1>⚡ Voice Energy</h1>
+      <p>Voice Energy grows every time you participate.</p>
+    </div>
+
+    <div class="energy-big-card">
+      <div class="energy-circle">
+        <span id="energyValue">0%</span>
+      </div>
+
+      <p id="energyMessage"></p>
+
+      <button onclick="addEnergy(10)">Add +10 Energy</button>
+      <button class="secondary" onclick="resetEnergy()">Reset Energy</button>
+    </div>
+  </main>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/energy.js"></script>
+</body>
+</html>
