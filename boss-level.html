@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Quest | Boss Level</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="boss-body">
+
+<div class="boss-screen">
+  <h1>👹 Silent Castle Boss</h1>
+  <p>The boss wins when students stay silent. Defeat it with your voice.</p>
+
+  <div class="boss-card">
+    <h2>Final Speaking Challenge</h2>
+    <p>Speak for 30 seconds about your daily routine without stopping.</p>
+
+    <div class="example-box">
+      <b>Use these ideas:</b>
+      <p>wake up, breakfast, school, friends, homework, evening</p>
+    </div>
+
+    <div id="bossTimer">30</div>
+
+    <button onclick="startBossFight()">Start Boss Fight</button>
+    <p id="bossResult"></p>
+  </div>
+
+  <button class="secondary" onclick="location.href='map.html'">Back to Map</button>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/boss.js"></script>
+</body>
+</html>
