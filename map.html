@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Quest | Map</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="game-layout">
+  <aside class="sidebar">
+    <h2>Voice Quest</h2>
+    <a class="active" href="map.html">🌍 Map</a>
+    <a href="missions.html">🎯 Missions</a>
+    <a href="team.html">👥 Team</a>
+    <a href="inventory.html">🎒 Inventory</a>
+    <a href="voice-zone.html">🎙 Voice Zone</a>
+    <a href="npc-chat.html">💬 NPC Chat</a>
+    <a href="boss-level.html">👹 Boss Level</a>
+    <a href="energy.html">⚡ Energy</a>
+  </aside>
+
+  <main>
+    <div class="top-card">
+      <h1>🌍 Daily Routine Kingdom</h1>
+      <p>
+        The Silent Castle has stolen the voices of students. Complete English missions to unlock speaking power.
+      </p>
+    </div>
+
+    <div class="map-grid">
+      <div class="zone active" onclick="location.href='missions.html'">
+        🌅 Morning Forest
+        <span>Start with one-word missions</span>
+      </div>
+
+      <div class="zone active" onclick="location.href='voice-zone.html'">
+        🏫 School City
+        <span>Speak about school life</span>
+      </div>
+
+      <div class="zone active" onclick="location.href='npc-chat.html'">
+        🧙 Teacher Wizard Tower
+        <span>Answer NPC questions</span>
+      </div>
+
+      <div class="zone locked">
+        🔒 Homework Cave
+        <span>Unlock after 3 missions</span>
+      </div>
+
+      <div class="zone active" onclick="location.href='team.html'">
+        👥 Team Bridge
+        <span>Save your teammates</span>
+      </div>
+
+      <div class="zone boss" onclick="location.href='boss-level.html'">
+        👹 Silent Castle
+        <span>Final speaking boss</span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
